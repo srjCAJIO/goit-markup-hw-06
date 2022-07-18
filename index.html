@@ -410,14 +410,38 @@
     
   <!-- модалка -->
     
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal class="backdrop">
       <div class="modal">
-        <button type="button" data-modal-close class="modal-closebtn">
+        <button type="button" data-modal-close class="modal-closebtn hand">
           <svg class="modal-closeicn" width="18" height="18">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="username">Имя</label>
+            <input type="text" name="user-name" id="username">
+          </div>
+          <div class="modal-field">
+            <label for="usertel">Телефон</label>
+            <input type="tel" name="user-tel" id="usertel">
+          </div>
+          <div class="modal-field">
+            <label for="usermail">Почта</label>
+            <input type="email" name="user-email" id="usermail">
+          </div>
+          <div class="modal-field">
+            <label for="usercomment">Комментарий</label>
+            <textarea class="modal-comment" name="user-comment" id="usercomment" rows="6" placeholder="Введите текст"></textarea>
+          </div>
+          <div class="modal-license">
+            <input type="checkbox" name="userlicense-agree" id="licenseagree">
+            <label for="licenseagree">Соглашаюсь с рассылкой и принимаю</label>
+            <a href="" class="modal-license-link">Условия договора</a>
+          </div>
+          <button type="submit" class="modal-submitbtn hand">Отправить</button>
+        </form>
       </div>
     </div>
     
