@@ -429,8 +429,7 @@ a {
 .modal-comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
-.modal-input:hover,
-.modal-comment:hover {
+.modal-field:hover {
     cursor: pointer;
 }
 
@@ -467,8 +466,17 @@ a {
     border: none;
 }
 
+.modal-check:focus + .modal-check-label span {
+    border-color: var(--brandblue);
+}
+
 .modal-field-link {
     text-decoration: underline;
+}
+
+.modal-field-link:hover,
+.modal-field-link:focus {
+    text-decoration: none;
 }
 
 .modal-submitbtn {
@@ -770,6 +778,11 @@ a {
     Line-height: calc(20/16);
     Letter-spacing: 0,03;
     color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-input:focus,
+.subscribe-input:hover {
+    border-color: var(--brandblue);
 }
 
 .subscribe-btn span {
