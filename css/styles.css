@@ -429,9 +429,6 @@ a {
 .modal-comment::placeholder {
     color: rgba(117, 117, 117, 0.5);
 }
-.modal-field:hover {
-    cursor: pointer;
-}
 
 .modal-input:focus,
 .modal-comment:focus {
@@ -472,6 +469,7 @@ a {
 
 .modal-field-link {
     text-decoration: underline;
+    margin-left: 0.5em;
 }
 
 .modal-field-link:hover,
